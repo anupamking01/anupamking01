@@ -1,32 +1,79 @@
-<h1 align="center">Hi 👋, I'm Anupam Poddar</h1>
-<h3 align="center">Meticulous Data Scientist accomplished in compiling, transforming and analyzing complex information through software. Expert in machine learning and large dataset management. Demonstrated success in identifying relationships and building solutions to business problems.</h3>
+# Hi, I'm Anupam Poddar 👋
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=anupamking01&label=Profile%20views&color=0e75b6&style=flat" alt="anupamking01" /> </p>
+**Generative AI / Machine Learning Engineer | Agentic AI • LLMs • RAG • Multimodal AI • Trustworthy AI**
 
-- 🔭 I’m currently working on **RAG usecases**
+I build production AI systems and am currently strengthening my research profile for **MS in Computer Science applications in the United States**. My interests include **reliable tool-using agents, LLM reasoning and planning, trustworthy AI, multimodal learning, agent evaluation, and efficient AI systems**.
 
-- 🌱 I’m currently learning **Gen AI,LLM,New age AI**
+## Research & Agentic AI Focus
 
-- 👯 I’m looking to collaborate on **RAG projects**
+### VERA — Verification-Guided Reliable Autonomous LLM Agents
+**Independent research project — In Progress (Sep 2026–Present)**
 
-- 📫 How to reach me **anupampoddar1@gmail.com**
+VERA investigates whether explicit planning, structured state validation, scoped tool permissions, self-verification, adaptive replanning, and human clarification can improve long-horizon LLM-agent reliability.
 
-- 📄 Know about my experiences [https://bold.pro/my/anupam-poddar/384r](https://bold.pro/my/anupam-poddar/384r)
+Current work includes:
+- planner–executor–verifier system design;
+- typed tool/state models using Pydantic;
+- deterministic permission and precondition checks;
+- ambiguity-aware clarification before risky actions;
+- an experimental plan comparing ReAct, plan-and-execute, and verification-guided variants;
+- evaluation across task success, invalid actions, recovery, latency, and inference cost.
 
-- ⚡ Fun fact **I think I am funny**
+➡️ [View VERA research scaffold and experiment plan](projects/VERA/README.md)
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/anupam-king01" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/anupam-king01" height="30" width="40" /></a>
-<a href="https://www.codechef.com/users/https://www.codechef.com/users/anupamp11" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="https://www.codechef.com/users/anupamp11" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/https://www.hackerrank.com/anupampoddar1997" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="https://www.hackerrank.com/anupampoddar1997" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/https://leetcode.com/anupamking01/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/anupamking01/" height="30" width="40" /></a>
-<a href="https://auth.geeksforgeeks.org/user/https://auth.geeksforgeeks.org/user/champgamy/profile" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="https://auth.geeksforgeeks.org/user/champgamy/profile" height="30" width="40" /></a>
-</p>
+### AI Research Agent
+A planner/executor-style research agent that decomposes a research request into targeted questions, retrieves information from multiple web sources, summarizes evidence, and synthesizes a report.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+➡️ [View AI Research Agent](https://github.com/anupamking01/Ai-Researcher-Agent)
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anupamking01&show_icons=true&locale=en&layout=compact" alt="anupamking01" /></p>
+## Selected Professional AI Work
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=anupamking01&" alt="anupamking01" /></p>
+- Built **multi-agent conversational workflows** combining RAG, SQL, and web-search agents for insurance use cases.
+- Replaced a legacy RASA workflow with an **agentic LangGraph chatbot**.
+- Developed multimodal AI systems for document extraction, mathematical answer evaluation, and step-by-step tutoring.
+- Built RAG and knowledge-graph-assisted retrieval for healthcare and biomedical content.
+- Applied OCR, NLP, recommendation systems, fraud detection, forecasting, and scalable ML pipelines across logistics and telecom domains.
+
+## Research Publication
+
+**Extraction of Technical and Non-Technical Skills for Optimal Project-Team Allocation**  
+Published with Springer International Publishing.
+
+[Springer publication](https://link.springer.com/chapter/10.1007/978-981-15-1366-4_14)
+
+## Technical Stack
+
+**Agentic / GenAI:** LangGraph, LangChain, RAG, LLMs, AWS Bedrock, OpenAI, prompt engineering, multi-agent systems, Pydantic, vector search  
+**ML / NLP:** Transformers, BERT, RoBERTa, BioBERT, PubMedBERT, Hugging Face, TensorFlow, PyTorch, scikit-learn, NLTK, SpaCy  
+**Computer Vision:** OCR, OpenCV, object detection, YOLO, ViT, transfer learning, GANs  
+**Cloud / MLOps:** AWS EC2, Lambda, S3, Redshift, ECS, GCP BigQuery, Azure, Docker, Kubernetes, Jenkins, Kubeflow, Ray  
+**Data / Retrieval:** SQL, MongoDB, Weaviate, PgVector, Pinecone, Neo4j, Elasticsearch, knowledge graphs  
+**Programming:** Python, SQL, C++, JavaScript, HTML/CSS, Flask, FastAPI, Django, Git
+
+## Selected Repositories
+
+- [VERA — Verification-Guided Reliable Autonomous LLM Agents](projects/VERA/README.md)
+- [AI Research Agent](https://github.com/anupamking01/Ai-Researcher-Agent)
+- [End-to-End RAG](https://github.com/anupamking01/End_to_End_Rag)
+- [CHAT-PDF](https://github.com/anupamking01/CHAT-PDF)
+- [Nutrify](https://github.com/anupamking01/Nutrify)
+- [Loan Default Prediction](https://github.com/anupamking01/Loan-Default-prediction)
+- [Garment Search Engine](https://github.com/anupamking01/Garment-search-Engine)
+
+## Academic / Coding Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/anupam-king01)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/profile/champgamy?tab=activity)
+- [LeetCode](https://leetcode.com/anupamking01/)
+- [HackerRank](https://www.hackerrank.com/anupampoddar1997)
+- [CodeChef](https://www.codechef.com/users/anupamp11)
+- [Certificates](https://drive.google.com/drive/folders/1Q9E4g6cW3UR6QDN-dkId6tt_08j53bYU?usp=sharing)
+
+## Contact
+
+📧 anupampoddar1@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/anupam-king01)
+
+---
+
+*Current focus: reliable autonomous agents, planning/verification, trustworthy AI, and experimentally grounded Agentic AI systems.*
