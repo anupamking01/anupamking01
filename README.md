@@ -34,6 +34,10 @@ A planner/executor-style research agent that decomposes a research request into 
 - Built RAG and knowledge-graph-assisted retrieval for healthcare and biomedical content.
 - Applied OCR, NLP, recommendation systems, fraud detection, forecasting, and scalable ML pipelines across logistics and telecom domains.
 
+➡️ [Explore sanitized, runnable portfolio implementations of these professional AI problem classes](projects/professional-ai-portfolio/README.md)
+
+The portfolio includes multi-agent insurance intelligence, schema-first document extraction, biomedical KG-RAG, an AI math tutor/marker, OCR/document-fraud validation, speech + Bloom question generation, Jira/NLP test-case automation, enrollment-assistant logic, churn/forecast/recommendation analytics, and OCR/NLP incident remediation. Public implementations are clean-room reproductions and do not contain employer code or confidential data.
+
 ## Research Publication
 
 **Extraction of Technical and Non-Technical Skills for Optimal Project-Team Allocation**  
@@ -52,6 +56,7 @@ Published with Springer International Publishing.
 
 ## Selected Repositories
 
+- [Professional AI Portfolio — sanitized implementations from production problem classes](projects/professional-ai-portfolio/README.md)
 - [VERA — Verification-Guided Reliable Autonomous LLM Agents](projects/VERA/README.md)
 - [AI Research Agent](https://github.com/anupamking01/Ai-Researcher-Agent)
 - [End-to-End RAG](https://github.com/anupamking01/End_to_End_Rag)
