@@ -26,6 +26,30 @@ A planner/executor-style research agent that decomposes a research request into 
 
 ➡️ [View AI Research Agent](https://github.com/anupamking01/Ai-Researcher-Agent)
 
+## Spring 2027 Research Portfolio
+
+These projects are active experimental scaffolds. Each separates **implemented infrastructure** from **planned experiments**, defines reproducible baselines and metrics, and avoids claiming results before measurement.
+
+### MEMORA — Memory Policies for Long-Horizon LLM Agents
+Studies adaptive memory writing/retrieval under bounded context windows, comparing recency, similarity, summarization, hybrid ranking, and consolidation policies across task success, relevant-memory recall, stale-memory errors, context use, latency, and cost.
+
+➡️ [View MEMORA](projects/MEMORA/README.md)
+
+### CALIBRA-RAG — Uncertainty-Aware Retrieval and Abstention
+Studies when a RAG system should answer, retrieve more evidence, or abstain under irrelevant, missing, contradictory, duplicated, or stale retrieval. Planned evaluation includes selective accuracy, unsupported-claim rate, calibration, coverage, latency, and cost.
+
+➡️ [View CALIBRA-RAG](projects/CALIBRA-RAG/README.md)
+
+### VISTA — Evidence-Grounded Multimodal Reasoning Verification
+Studies whether claim-to-region evidence grounding and verification can reduce unsupported conclusions in chart, document, table, image, and mathematical reasoning tasks while measuring repair success and inference overhead.
+
+➡️ [View VISTA](projects/VISTA/README.md)
+
+### SAGE — Small-Model-First Adaptive Routing for Tool-Using Agents
+Studies uncertainty-, complexity-, and risk-aware routing between smaller and larger models for structured agent tasks, optimizing task success, tool-call validity, cost per successful task, p50/p95 latency, and escalation quality.
+
+➡️ [View SAGE](projects/SAGE/README.md)
+
 ## Selected Professional AI Work
 
 - Built **multi-agent conversational workflows** combining RAG, SQL, and web-search agents for insurance use cases.
@@ -56,9 +80,13 @@ Published with Springer International Publishing.
 
 ## Selected Repositories
 
-- [Professional AI Portfolio — sanitized implementations from production problem classes](projects/professional-ai-portfolio/README.md)
 - [VERA — Verification-Guided Reliable Autonomous LLM Agents](projects/VERA/README.md)
+- [MEMORA — Memory Policies for Long-Horizon LLM Agents](projects/MEMORA/README.md)
+- [CALIBRA-RAG — Uncertainty-Aware Retrieval and Abstention](projects/CALIBRA-RAG/README.md)
+- [VISTA — Evidence-Grounded Multimodal Reasoning Verification](projects/VISTA/README.md)
+- [SAGE — Small-Model-First Adaptive Routing for Tool-Using Agents](projects/SAGE/README.md)
 - [AI Research Agent](https://github.com/anupamking01/Ai-Researcher-Agent)
+- [Professional AI Portfolio — sanitized implementations from production problem classes](projects/professional-ai-portfolio/README.md)
 - [End-to-End RAG](https://github.com/anupamking01/End_to_End_Rag)
 - [CHAT-PDF](https://github.com/anupamking01/CHAT-PDF)
 - [Nutrify](https://github.com/anupamking01/Nutrify)
@@ -81,4 +109,4 @@ Published with Springer International Publishing.
 
 ---
 
-*Current focus: reliable autonomous agents, planning/verification, trustworthy AI, and experimentally grounded Agentic AI systems.*
+*Current focus: reliable autonomous agents, memory, planning/verification, trustworthy RAG, multimodal evidence grounding, agent evaluation, and efficient AI systems.*
