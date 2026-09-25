@@ -1,20 +1,39 @@
 # Anupam Poddar
 
-**AI/ML Engineer · Agentic AI · Retrieval-Augmented Generation · LLM Evaluation**
+**AI/ML Engineer · Agentic AI · RAG · LLM Evaluation**
 
-I build AI systems that connect language models with tools, structured data, and evidence. My experience spans data science, machine learning, and applied generative AI; my research interests center on **reliable autonomous agents, trustworthy retrieval, and the quality–latency–cost trade-off**.
+I build AI systems that connect language models with tools, structured data, and evidence. My work spans multi-agent workflows, document intelligence, and applied machine learning. My research focuses on **reliable agents, trustworthy retrieval, and the quality–latency–cost trade-off**.
 
-Preparing for **MS in Computer Science, Spring 2027**. Open to research collaboration and remote AI/ML consulting or contract opportunities.
+Open to **research collaboration, remote AI/ML consulting, and contract opportunities**. Preparing for **MS in Computer Science, Spring 2027**.
 
-[LinkedIn](https://www.linkedin.com/in/anupam-king01) · [Publication](#publication) · [Open source](#open-source-engineering) · [Research](#research-in-progress) · [Contact](mailto:anupampoddar1@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/anupam-king01) · [Email](mailto:anupampoddar1@gmail.com) · [Research](#research-in-progress) · [Publication](#publication) · [Open source](#open-source-engineering)
 
-## Featured work
+## Start here
 
-| Project | What to explore | Status |
+| Explore | What you can review | Current stage |
 | --- | --- | --- |
-| **[AI Research Agent](https://github.com/anupamking01/Ai-Researcher-Agent)** | Planner–execution web research, source tracking, streamed reports, and offline evaluation utilities. [Architecture](https://github.com/anupamking01/Ai-Researcher-Agent/blob/main/docs/ARCHITECTURE.md) · [Evaluation protocol](https://github.com/anupamking01/Ai-Researcher-Agent/blob/main/docs/EVALUATION.md) | Experimental research system |
-| **[VERA](https://github.com/anupamking01/anupamking01/tree/main/projects/VERA)** | Verification-guided agents: typed state, permission checks, action validation, and an explicit experimental plan. [Code](https://github.com/anupamking01/anupamking01/tree/main/projects/VERA/src) · [Study design](https://github.com/anupamking01/anupamking01/blob/main/projects/VERA/EXPERIMENT_PLAN.md) | Research scaffold; in progress |
-| **[Professional AI Portfolio](https://github.com/anupamking01/anupamking01/tree/main/projects/professional-ai-portfolio)** | Ten clean-room Python demonstrations covering multi-agent routing, document intelligence, knowledge-graph retrieval, tutoring, and analytics. | Deterministic local examples |
+| **[AI Research Agent](https://github.com/anupamking01/Ai-Researcher-Agent)** | Web-research workflow, source tracking, streamed reports, and a **40-run study** of retrieval, planning, and verification. [Study overview](https://github.com/anupamking01/Ai-Researcher-Agent/blob/d5d9fcd4762092c4a79f2e830d1f688dfe1f9cc8/README.md) · [Automated results](https://github.com/anupamking01/Ai-Researcher-Agent/blob/d5d9fcd4762092c4a79f2e830d1f688dfe1f9cc8/paper/MAIN_STUDY_INFERENCE.md) | Experimental system; study on a draft branch |
+| **[Professional AI Portfolio](https://github.com/anupamking01/anupamking01/tree/main/projects/professional-ai-portfolio)** | **10 runnable Python examples** illustrating routing, document validation, retrieval, tutoring, and analytics with synthetic data. | Deterministic local demonstrations |
+| **[VERA](https://github.com/anupamking01/anupamking01/tree/main/projects/VERA)** | Typed agent state, permission checks, and action validation. [Code](https://github.com/anupamking01/anupamking01/tree/main/projects/VERA/src) · [Study design](https://github.com/anupamking01/anupamking01/blob/main/projects/VERA/EXPERIMENT_PLAN.md) | Research scaffold; experiments planned |
+
+## Research in progress
+
+### Where should a research agent spend its budget?
+
+My **AI Research Agent** study compares **10 tasks × 4 variants = 40 treatment runs**: direct retrieval at two browse budgets, planning, and planning with verification.
+
+The research branch includes:
+
+- a common post-hoc evidence-support evaluator, separate from treatment-time verification;
+- source provenance and token, latency, model-call, and cost accounting;
+- a frozen paired analysis with bootstrap confidence intervals, exact sign-flip tests, and multiple-comparison adjustment;
+- deterministic blinded evaluation packets and tooling to freeze human ratings before unblinding.
+
+**Automated analysis is complete; blinded human evaluation remains pending.** The three primary comparisons did not establish statistically significant gains on this small original live-web task set. The project remains an in-progress research artifact, with its study changes tracked in [draft PR #1](https://github.com/anupamking01/Ai-Researcher-Agent/pull/1).
+
+[Analysis plan](https://github.com/anupamking01/Ai-Researcher-Agent/blob/d5d9fcd4762092c4a79f2e830d1f688dfe1f9cc8/paper/ANALYSIS_PLAN.md) · [Frozen automated results](https://github.com/anupamking01/Ai-Researcher-Agent/blob/d5d9fcd4762092c4a79f2e830d1f688dfe1f9cc8/paper/MAIN_STUDY_INFERENCE.md) · [Human evaluation protocol](https://github.com/anupamking01/Ai-Researcher-Agent/blob/d5d9fcd4762092c4a79f2e830d1f688dfe1f9cc8/paper/HUMAN_EVAL_PROTOCOL.md)
+
+**VERA — Verification-Guided Reliable Autonomous LLM Agents** explores whether explicit state validation, scoped permissions, verification, and recovery improve long-horizon agent reliability. Its current scaffold contains Pydantic state models, deterministic policy checks, and verifier tests.
 
 ## Publication
 
@@ -36,13 +55,44 @@ I contribute focused reliability fixes and regression coverage to AI tooling. Se
 | **GPT Researcher** | Bound external requests and handle transport or malformed-response failures | [Bing #2133](https://github.com/assafelovic/gpt-researcher/pull/2133) · [Semantic Scholar #2130](https://github.com/assafelovic/gpt-researcher/pull/2130) |
 | **Pydantic AI** | Snapshot per-call metadata at deferred-tool ownership boundaries | [Draft PR #8366](https://github.com/pydantic/pydantic-ai/pull/8366) |
 
-These are **submitted contributions, not claims of upstream acceptance**. The highlighted GPT Researcher PRs are open and the Pydantic AI PR is a draft as of **25 September 2026**. [Contribution log, additional PRs, and verification limits](https://github.com/anupamking01/anupamking01/blob/main/OPEN_SOURCE.md).
+**Status checked 25 September 2026:** the highlighted GPT Researcher PRs are open; the Pydantic AI PR is an open draft. All are awaiting upstream acceptance. [Contribution log, additional PRs, and verification limits](https://github.com/anupamking01/anupamking01/blob/main/OPEN_SOURCE.md).
 
-## Research in progress
+## Applied AI: experience and examples
 
-**VERA — Verification-Guided Reliable Autonomous LLM Agents** asks whether planning, explicit state validation, scoped permissions, verification, and recovery can improve long-horizon agent reliability without excessive inference cost. The current public scaffold includes Pydantic state models, deterministic policy checks, and verifier tests; the broader comparison is documented as planned work.
+My professional work includes RAG/SQL/web-search assistants, a LangGraph-based replacement for a legacy RASA workflow, schema-first document extraction, and AI tutoring and answer-evaluation systems.
 
-**AI Research Agent** provides a complementary web-research workflow for investigating source coverage, failure modes, latency, token usage, and report quality. Its README acknowledges the project's GPT Researcher architectural lineage.
+These public examples illustrate selected problem classes:
+
+| Problem | Public code | What the example demonstrates |
+| --- | --- | --- |
+| Multi-agent routing | [Insurance assistant](https://github.com/anupamking01/anupamking01/blob/main/projects/professional-ai-portfolio/multi_agent_insurance.py) | Rule-based routing across retrieval, analytics, and web interfaces, with source traces |
+| Document intelligence | [Extraction and validation](https://github.com/anupamking01/anupamking01/blob/main/projects/professional-ai-portfolio/document_intelligence.py) | Structured records, field validation, and field-level comparison |
+| Educational AI | [Math tutor and marker](https://github.com/anupamking01/anupamking01/blob/main/projects/professional-ai-portfolio/math_tutor.py) | Step-token matching and feedback in a small local demonstration |
+
+The [full portfolio](https://github.com/anupamking01/anupamking01/tree/main/projects/professional-ai-portfolio) uses synthetic inputs and provider-neutral interfaces. These are clean-room demonstrations of professional problem classes; employer implementations remain separate.
+
+<details>
+<summary><strong>Run a local example — no API key required</strong></summary>
+
+Requires Python 3.9 or later.
+
+```bash
+git clone https://github.com/anupamking01/anupamking01.git
+cd anupamking01/projects/professional-ai-portfolio
+python3 multi_agent_insurance.py
+python3 document_intelligence.py
+python3 math_tutor.py
+```
+
+See the [portfolio README](https://github.com/anupamking01/anupamking01/blob/main/projects/professional-ai-portfolio/README.md) for all ten examples and existing tests.
+
+</details>
+
+## Technical focus
+
+**Agents & retrieval:** Python, LangGraph, LangChain, Pydantic, RAG, vector search, knowledge graphs, AWS Bedrock.  
+**ML & multimodal:** PyTorch, TensorFlow, scikit-learn, Hugging Face, NLP, OCR, OpenCV.  
+**Engineering & data:** FastAPI, SQL, Docker, Git, AWS, PostgreSQL/pgvector, Neo4j, Pinecone, Weaviate.
 
 <details>
 <summary><strong>Additional research explorations</strong></summary>
@@ -57,18 +107,6 @@ These are early experimental scaffolds and study plans, not completed papers or 
 | [SAGE](https://github.com/anupamking01/anupamking01/tree/main/projects/SAGE) | When should tool-using agents escalate from smaller to larger models? |
 
 </details>
-
-## Professional experience → public demonstrations
-
-My professional work includes multi-agent conversational systems combining RAG, SQL, and web search; a LangGraph-based replacement for a legacy RASA workflow; schema-first document extraction; and AI tutoring and answer-evaluation systems. Other applied work spans knowledge-graph retrieval, OCR/NLP, forecasting, recommendations, and fraud detection.
-
-The [public portfolio](https://github.com/anupamking01/anupamking01/tree/main/projects/professional-ai-portfolio) illustrates these problem classes with synthetic inputs and provider-neutral interfaces. **It is not employer source code or a set of production deployments**; its local examples do not require model API keys.
-
-## Technical focus
-
-**Agentic AI & retrieval:** Python, LangGraph, LangChain, Pydantic, RAG, vector search, knowledge graphs, AWS Bedrock.  
-**ML & multimodal systems:** PyTorch, TensorFlow, scikit-learn, Hugging Face, NLP, OCR, OpenCV.  
-**Engineering & data:** FastAPI, SQL, Docker, Git, AWS, PostgreSQL/pgvector, Neo4j, Pinecone, Weaviate.
 
 <details>
 <summary><strong>Earlier projects and coding profiles</strong></summary>
@@ -85,4 +123,4 @@ Earlier work is kept separate from active research; inclusion here does not impl
 
 ## Let's connect
 
-For research collaboration in reliable agents and trustworthy RAG, or consulting on agent workflows, document intelligence, and retrieval systems: **[anupampoddar1@gmail.com](mailto:anupampoddar1@gmail.com)** · **[LinkedIn](https://www.linkedin.com/in/anupam-king01)**.
+For collaboration on **reliable agents, trustworthy RAG, document intelligence, or LLM evaluation**: [anupampoddar1@gmail.com](mailto:anupampoddar1@gmail.com) · [LinkedIn](https://www.linkedin.com/in/anupam-king01).
