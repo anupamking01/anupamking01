@@ -11,10 +11,13 @@ I build AI systems for **retrieval, document intelligence, and tool-using workfl
 
 ## Start here
 
+**Research reviewers:** begin with the agent study and published work. **Engineering reviewers:** start with the runnable portfolio, its tests, and the upstream pull requests below.
+
 | Explore | What you can review | Current stage |
 | --- | --- | --- |
 | **[AI Research Agent](https://github.com/anupamking01/Ai-Researcher-Agent)** | Web-research system with source tracking and a **40-run study** of retrieval, planning, and verification. [Study overview](https://github.com/anupamking01/Ai-Researcher-Agent/blob/d5d9fcd4762092c4a79f2e830d1f688dfe1f9cc8/README.md) · [Automated results](https://github.com/anupamking01/Ai-Researcher-Agent/blob/d5d9fcd4762092c4a79f2e830d1f688dfe1f9cc8/paper/MAIN_STUDY_INFERENCE.md) | Experimental system; study on a draft branch |
-| **[Professional AI Portfolio](https://github.com/anupamking01/anupamking01/tree/main/projects/professional-ai-portfolio)** | **10 runnable Python examples** illustrating routing, document validation, retrieval, tutoring, and analytics with synthetic data. | Deterministic local demonstrations |
+| **[Published research](#publication)** | Co-authored work on technical/non-technical skill extraction and project-team allocation. [Publisher record](https://link.springer.com/chapter/10.1007/978-981-15-1366-4_14) · [BibTeX](https://github.com/anupamking01/anupamking01/blob/main/publications.bib) | Springer, 2020; separate from the current agent research |
+| **[Professional AI Portfolio](https://github.com/anupamking01/anupamking01/tree/main/projects/professional-ai-portfolio)** | **10 Python examples** illustrating routing, document validation, retrieval, tutoring, and analytics with synthetic data. [Quick start and scope](https://github.com/anupamking01/anupamking01/blob/main/projects/professional-ai-portfolio/README.md) · [Smoke tests](https://github.com/anupamking01/anupamking01/blob/main/projects/professional-ai-portfolio/tests/test_portfolio.py) | Deterministic local demonstrations |
 | **[VERA](https://github.com/anupamking01/anupamking01/tree/main/projects/VERA)** | Typed agent state, permission checks, and action validation. [Code](https://github.com/anupamking01/anupamking01/tree/main/projects/VERA/src) · [Study design](https://github.com/anupamking01/anupamking01/blob/main/projects/VERA/EXPERIMENT_PLAN.md) | Research scaffold; experiments planned |
 
 ## Publication
@@ -22,7 +25,7 @@ I build AI systems for **retrieval, document intelligence, and tool-using workfl
 **[Extraction of Technical and Non-technical Skills for Optimal Project-Team Allocation](https://link.springer.com/chapter/10.1007/978-981-15-1366-4_14)**  
 Kanika Bhatia, Shampa Chakraverty, Sushama Nagpal, Amit Kumar, Mohit Lamba, and **Anupam Poddar**.  
 *Machine Intelligence and Signal Processing*, MISP 2019, Advances in Intelligent Systems and Computing, vol. 1085, pp. 173–184. Springer, **2020**.  
-**DOI:** `10.1007/978-981-15-1366-4_14`
+**DOI:** `10.1007/978-981-15-1366-4_14` · [BibTeX citation](https://github.com/anupamking01/anupamking01/blob/main/publications.bib)
 
 The work investigates technical and non-technical skill extraction and project-team matching using formal concept analysis and a project-oriented stable marriage algorithm.
 
@@ -42,7 +45,7 @@ The [full portfolio](https://github.com/anupamking01/anupamking01/tree/main/proj
 
 ### Try an example
 
-Python 3.9+; standard library only; no API key required.
+**Python 3.10+** for the complete portfolio and test suite; standard library only; no API key required.
 
 ```bash
 git clone https://github.com/anupamking01/anupamking01.git
@@ -50,9 +53,10 @@ cd anupamking01/projects/professional-ai-portfolio
 python3 multi_agent_insurance.py
 python3 document_intelligence.py
 python3 math_tutor.py
+python3 -m unittest discover -s tests -v
 ```
 
-See the [portfolio README](https://github.com/anupamking01/anupamking01/blob/main/projects/professional-ai-portfolio/README.md) for all ten examples and existing tests.
+See the [portfolio README](https://github.com/anupamking01/anupamking01/blob/main/projects/professional-ai-portfolio/README.md) for all ten examples, expected outputs, implementation boundaries, and verification scope. The current suite contains seven smoke tests for local deterministic behavior—not production integrations or model quality.
 
 ## Research in progress
 
