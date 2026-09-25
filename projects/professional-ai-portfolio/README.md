@@ -1,53 +1,73 @@
 # Professional AI Portfolio
 
-Clean-room, sanitized implementations inspired by technical problem classes from my professional experience. These examples do **not** contain employer code, confidential data, customer information, or proprietary prompts. They are portfolio reproductions designed to demonstrate architecture, interfaces, evaluation thinking, and runnable local behavior.
+**10 deterministic Python demonstrations of routing, structured data, evidence handling, and validation.**
 
-## Included projects
+These clean-room examples illustrate problem classes from my professional AI/ML work. They use synthetic inputs and local, provider-neutral components: **no API key, paid service, or model download is required**. They are not employer implementations or production deployments.
 
-1. **Multi-Agent Insurance Intelligence** — routes requests across retrieval, SQL-style analytics, and web-search interfaces, then synthesizes an answer with source traces.
-2. **Multimodal Document Intelligence** — schema-first extraction pipeline for document text/vision outputs with validation and field-level quality metrics.
-3. **Biomedical Knowledge-Graph RAG** — biomedical entity normalization, lightweight graph construction, retrieval, and evidence assembly.
-4. **AI Mathematics Tutor & Marker** — answer parsing, step-level checks, misconception feedback, and concept-level tutoring hints.
-5. **Document Fraud Intelligence** — OCR-oriented document checks, GST/RC identifier validation, QR/amount consistency, anomaly signals, and explainable risk scoring.
-6. **Speech + Education AI** — transcript normalization plus Bloom's-taxonomy-aligned question generation.
-7. **NLP Test-Case Automation** — converts Jira-like test descriptions into structured actions, entities, expected outcomes, and automation-ready records.
-8. **Enrollment Assistant / Bedrock-ready interface** — employer/employee enrollment validation, deterministic policy gates, and a provider-neutral payload shape for Bedrock integration.
-9. **Churn, Forecasting & Recommendation Analytics** — deterministic demonstration of churn risk scoring, moving-average forecasting, and category recommendation logic over synthetic events.
-10. **OCR/NLP Incident Remediation** — classifies OCR text from application-error screenshots and maps detected incidents to transparent remediation runbooks.
+[Profile and research](../../README.md) · [Source files](.) · [Smoke tests](tests/test_portfolio.py)
 
-## Run
+## Start with these three examples
 
-All examples use the Python standard library so they can run without API keys.
+| Review focus | Code | What is implemented | Boundary to keep in mind |
+| --- | --- | --- | --- |
+| Tool routing and provenance | [Multi-agent insurance assistant](multi_agent_insurance.py) | Keyword-based routing, typed tool results, answer assembly, and deduplicated source identifiers | Retrieval, SQL, and web tools return synthetic responses; no live database, search, or LLM is called |
+| Structured document processing | [Document intelligence](document_intelligence.py) | Delimited-text parsing into a dataclass, field validation, and exact-match field comparison | This is not an OCR/vision model or a learned document extractor |
+| Educational feedback | [Math tutor and marker](math_tutor.py) | Reference-step token overlap, matched/missing-step feedback, and a templated hint | Token overlap is a heuristic, not mathematical equivalence checking or validated automated grading |
+
+## Quick start
+
+Use **Python 3.10 or later** for the complete portfolio and test suite. Some modules use `X | None` type annotations, which require Python 3.10+. The examples use only the standard library.
 
 ```bash
-cd projects/professional-ai-portfolio
-python multi_agent_insurance.py
-python document_intelligence.py
-python biomedical_kg_rag.py
-python math_tutor.py
-python document_fraud.py
-python speech_education.py
-python nlp_testcase_automation.py
-python enrollment_assistant.py
-python ml_analytics.py
-python incident_remediation.py
-python -m unittest discover -s tests -v
+python3 --version
+
+git clone https://github.com/anupamking01/anupamking01.git
+cd anupamking01/projects/professional-ai-portfolio
+
+python3 multi_agent_insurance.py
+python3 document_intelligence.py
+python3 math_tutor.py
+
+python3 -m unittest discover -s tests -v
 ```
 
-## Architecture principles
+On Windows, use `py -3` in place of `python3` when appropriate for your installation.
 
-- explicit schemas instead of free-form outputs;
-- deterministic validation around probabilistic AI components;
-- source/evidence tracing;
-- modular tool boundaries;
-- measurable failure modes;
-- privacy-preserving synthetic examples;
-- clear separation between production experience and public portfolio code.
+The routing demo reports `['rag', 'sql']` for its included coverage-and-claims question. The document demo prints an `ApplicationRecord` followed by `validation: {}`. The math demo reports a score of `0.5` for its included steps; this is an illustrative token-overlap score, not an accuracy benchmark.
 
-## Extension points
+## All examples
 
-The deterministic local components are intentionally provider-neutral. Production-grade extensions can plug in LangGraph/LangChain, AWS Bedrock/OpenAI, vector stores, OCR/vision models, Neo4j, Pinecone, SQL engines, speech-to-text providers, BigQuery, or external search without changing the public data model.
+| Example | Implementation | Local demonstration |
+| --- | --- | --- |
+| Multi-agent insurance intelligence | [multi_agent_insurance.py](multi_agent_insurance.py) | Routing across synthetic retrieval, analytics, and web interfaces |
+| Document intelligence | [document_intelligence.py](document_intelligence.py) | Structured records, field validation, and field-level comparison |
+| Biomedical knowledge-graph retrieval | [biomedical_kg_rag.py](biomedical_kg_rag.py) | Entity normalization, graph traversal, lexical document retrieval, and evidence assembly |
+| Mathematics tutor and marker | [math_tutor.py](math_tutor.py) | Step-token matching, missing-step feedback, and hints |
+| Document consistency checks | [document_fraud.py](document_fraud.py) | Identifier-format checks and weighted signals over supplied fields, including amount mismatches |
+| Transcript and education utilities | [speech_education.py](speech_education.py) | Text normalization and Bloom-level question templates |
+| NLP test-case automation | [nlp_testcase_automation.py](nlp_testcase_automation.py) | Rule-based conversion of written steps into structured actions and entities |
+| Enrollment assistant | [enrollment_assistant.py](enrollment_assistant.py) | Enrollment validation, policy checks, and a provider-neutral integration payload |
+| Churn, forecasting, and recommendation analytics | [ml_analytics.py](ml_analytics.py) | Deterministic analytics over synthetic events |
+| Incident remediation | [incident_remediation.py](incident_remediation.py) | Classification of supplied incident text and runbook selection |
 
-## Integrity note
+Run another example from this directory with `python3 <filename>.py`.
 
-The repository demonstrates the kinds of systems described on my resume, but it does not claim that this public code is the original employer implementation. Metrics in these demos are illustrative unless explicitly produced by the included tests.
+## Tests and verification scope
+
+The existing [test suite](tests/test_portfolio.py) contains **seven smoke tests** covering routing, document validation, graph context, step matching, amount-mismatch handling, transcript/question utilities, and action parsing.
+
+**Local verification, 25 September 2026:** all seven smoke tests and the three quick-start demos passed under Python **3.13.5**. The eight source/test files used for the suite were checked against their GitHub blob hashes before execution. The documented minimum of Python 3.10 follows from the code's syntax; this verification did not run a Python 3.10 interpreter or a multi-version compatibility matrix.
+
+These tests are not comprehensive coverage. In particular, the current suite does not include dedicated tests for enrollment, analytics, or incident remediation. Passing smoke tests does not establish real-world model quality, security, clinical validity, or production readiness.
+
+## Design choices
+
+The examples make data structures and tool boundaries inspectable, retain source identifiers where relevant, and put deterministic checks around inputs and outputs. Synthetic data keeps the demonstrations separate from employer systems and customer information.
+
+A production extension would require real provider adapters, secret management, access controls, input/error handling, persistence, observability, and evaluation on representative data. LangGraph/LangChain, AWS Bedrock, vector databases, OCR/vision models, SQL, and speech services are possible integration directions—not dependencies or completed integrations of these local examples.
+
+## Limitations and provenance
+
+The code demonstrates software structure and selected workflows, not novel trained models. Biomedical examples are illustrative and are not medical guidance. Document risk scores are hand-set heuristics, not calibrated fraud probabilities or official identifier verification. Educational scores are not validated assessment instruments.
+
+No employer code, confidential customer data, proprietary prompts, or production credentials are included. Professional experience and these public demonstrations should be evaluated separately.
